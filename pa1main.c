@@ -1,15 +1,25 @@
+/**
+ * @file   pa1main.c
+ * @author Davin Lewis
+ * @brief  Program accepts a string entered by user, parses string, dynamically allocates arrray, and outputs tokens
+ * @date   09/09/2023
+ *
+ */
+
 #include "pa1.h"
-#include <stdio.h>
+
 
 int main()
 {
-    char **arrayOfTokens, str[] = "ls -l file";
+    char str[50];
+    scanf("%[^\n]s",str);
+    char **arrayOfTokens;
     int numberOfTokens;
     numberOfTokens = getTokens(str, &arrayOfTokens);
-    /*printf("Number of tokens: %d", numberOfTokens);
-    for(int i = 1; i <= numberOfTokens; i++)
+    printf("Number of Tokens: %d\n", numberOfTokens);
+    for(int i = 0; i < numberOfTokens; i++)
     {
-        printf("Token %d: %s", i, arrayOfTokens[i]);
-    }*/
+        printf("%s\n", (arrayOfTokens)[i]);
+    }
     return 0;
 }
