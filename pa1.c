@@ -11,8 +11,6 @@
 int getTokens(char *s, char ***args)
 {
     int start=0, end=0, tokenSize=0, numtoken=0, current =0;
-    //temp for holding tokens
-    char temp[20];
     for(int i=0; i < strlen(s); i++)
     {
         //won't let string start with a space
