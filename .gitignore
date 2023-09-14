@@ -1,5 +1,6 @@
 pa1
 .vscode
+valgrind.rpt
 
 # Prerequisites
 *.d
