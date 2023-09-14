@@ -1,3 +1,8 @@
+all:pa1
+
+clean: 
+	rm -f pa1 pa1 *.o
+
 pa1: pa1.o pa1main.o
 	gcc -Wall -g pa1.o pa1main.o -o pa1
 
