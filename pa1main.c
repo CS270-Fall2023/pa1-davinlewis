@@ -13,9 +13,9 @@ int main()
 {
     //prompts user for string
     printf("Enter a string: ");
-    char str[50];
+    char str[256];
     //gets user input until they press enter
-    fgets(str, 50, stdin);
+    fgets(str, 256, stdin);
     char **arrayOfTokens;
     int numberOfTokens;
     //counts number of tokens and places in array
