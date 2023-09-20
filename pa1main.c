@@ -21,7 +21,7 @@ int main()
     //counts number of tokens and places in array
     numberOfTokens = getTokens(str, &arrayOfTokens);
     //ouputs tokens from array
-    printf("Number of Tokens: %d\n", numberOfTokens);
+    printf("Number of Tokens: %d\n", numberOfTokens-1);
     for(int i = 0; i < numberOfTokens; i++)
     {
         printf("Token %i: %s\n", i+1, (arrayOfTokens)[i]);

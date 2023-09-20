@@ -26,7 +26,10 @@ int getTokens(char *s, char ***args)
             if(current > 0)
             {
                 //resizes *args to fit more tokens
-                *args = realloc(*args, (sizeof(char**))*(current+1));
+                if((*args = realloc(*args, (sizeof(char**))*(current+1))) == NULL)
+                {
+                    return -1;
+                }
             }
             //allocates space and puts token into array
             end = i;
